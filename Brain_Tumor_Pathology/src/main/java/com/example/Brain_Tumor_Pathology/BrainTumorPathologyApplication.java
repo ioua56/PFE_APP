@@ -1,13 +1,11 @@
-package com.example.ServiceDiscovery;
+package com.example.Brain_Tumor_Pathology;
 
-import com.netflix.discovery.DiscoveryClient;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.discovery.shared.Application;
-import com.netflix.discovery.shared.Applications;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,17 +13,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableEurekaServer
-@EnableAutoConfiguration
+@EnableEurekaClient
 @RestController
-public class ServiceDiscoveryApplication {
+public class BrainTumorPathologyApplication {
 
 	@Autowired
 	@Lazy
 	private EurekaClient eurekaClient;
 
-	@GetMapping("/Services")
-	public String getPathologiesList(){
+	// Get api that returns all services
 
+
+
+	@GetMapping("/hello")
+	public String hello(){
 		String hello="Hello world";
 		for(Application a : eurekaClient.getApplications().getRegisteredApplications()){
 			hello +=a.getName()+" \n"+ a.getInstances()+" ; \n";
@@ -33,8 +34,9 @@ public class ServiceDiscoveryApplication {
 		return hello;
 	}
 
+
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceDiscoveryApplication.class, args);
+		SpringApplication.run(BrainTumorPathologyApplication.class, args);
 	}
 
 }

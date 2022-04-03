@@ -6,8 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
@@ -31,9 +35,14 @@ public class BrainTumorClassifcationApplication {
 		}
 		return hello;
 	}
+	@PostMapping("/")
+	public String post(){
+		return "This brain tumor classification";
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(BrainTumorClassifcationApplication.class, args);
 	}
+
 
 }

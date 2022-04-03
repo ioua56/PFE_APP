@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Brain_Tumor_Pathology" />
+        <module name="Brain-tumor-classifcation" />
+        <module name="Brain-tumor-segmentation" />
+        <module name="Service-Discovery" />
+        <module name="gateway" />
+        <module name="Monitoring" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Brain-tumor" target="17" />
+      <module name="routing-and-filtering-gateway" target="11" />
+      <module name="Service-Discovery-2" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Brain-tumor" options="-parameters" />
+      <module name="Brain-tumor-classifcation" options="-parameters" />
+      <module name="Brain-tumor-segmentation" options="-parameters" />
+      <module name="Brain_Tumor_Pathology" options="-parameters" />
+      <module name="Monitoring" options="-parameters" />
+      <module name="Service-Discovery" options="-parameters" />
+      <module name="Service-Discovery-2" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+    </option>
+  </component>
+</project>

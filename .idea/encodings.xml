@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Brain-tumor-classifcation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Brain-tumor-classifcation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Brain-tumor-segmentation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Brain-tumor-segmentation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Brain-tumor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Brain-tumor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Brain_Tumor_Pathology/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Brain_Tumor_Pathology/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Monitoring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Monitoring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Service-Discovery-2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Service-Discovery-2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Service-Discovery/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Service-Discovery/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
