@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Brain_tumor_classfication_python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Front-end/extensions/OHIF-extension-clock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Front-end/modes/OHIF-mode-clock" vcs="Git" />
   </component>
 </project>
